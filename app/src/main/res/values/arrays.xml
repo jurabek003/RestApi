@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="myspinner" >
+        <item>shart</item>
+        <item>foydali</item>
+        <item>hayot_mamot</item>
+        <item>tavsiya</item>
+    </string-array>
+</resources>

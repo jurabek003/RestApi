@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    android:orientation="vertical">
+    <ProgressBar
+        android:id="@+id/dialog_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:progressTintMode="multiply"
+        android:visibility="gone"
+        android:progressBackgroundTint="#FFD600"
+        android:paddingVertical="20dp"
+        android:backgroundTint="#FFD600"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxStrokeWidth="3dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:errorEnabled="true"
+        app:boxStrokeErrorColor="#FF0000"
+        app:boxStrokeColor="#0026FF"
+        android:paddingVertical="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_sarlovha"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="sarlovha"
+            android:inputType="textAutoComplete"
+            android:maxLength="20"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="#0026FF"
+    app:counterMaxLength="300"
+    app:counterEnabled="true"
+    app:errorEnabled="true"
+    app:boxStrokeErrorColor="#FF0000"
+
+    android:paddingVertical="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_batafsil"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="batafsil"
+            android:maxLength="300"
+            android:inputType="textAutoComplete"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      app:boxStrokeWidth="3dp"
+        app:boxStrokeColor="#0026FF"
+    android:paddingVertical="5dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_oxirgi_muddat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="oxirgi_muddat"
+            android:maxLength="20"
+            android:inputType="date"
+            android:minLines="1"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_zarurlik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingVertical="15dp"
+        android:background="#1BE1FF"
+        android:entries="@array/myspinner"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_save"
+        android:layout_width="200dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_margin="20sp"
+        android:text="Add"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        app:strokeColor="#0026FF"
+        app:strokeWidth="3dp"/>
+
+</LinearLayout>
